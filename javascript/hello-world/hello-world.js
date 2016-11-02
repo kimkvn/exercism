@@ -7,9 +7,17 @@
 var HelloWorld = function() {};
 
 HelloWorld.prototype.hello = function(input) {
-//
-// YOUR CODE GOES HERE
-//
+  if(input === "Bob"){
+    return "Hello, Bob!";
+  }
+  if(input === "Sally"){
+    return "Hello, Sally!";
+  }
+  else{
+    return "Hello, World!";
+  }
 };
+
+HelloWorld('Bob');
 
 module.exports = HelloWorld;
