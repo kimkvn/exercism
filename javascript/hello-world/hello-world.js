@@ -15,6 +15,4 @@ HelloWorld.prototype.hello = function(input) {
   }
 };
 
-HelloWorld('Bob');
-
 module.exports = HelloWorld;
