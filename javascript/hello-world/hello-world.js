@@ -7,14 +7,11 @@
 var HelloWorld = function() {};
 
 HelloWorld.prototype.hello = function(input) {
-  if(input === "Bob"){
-    return "Hello, Bob!";
-  }
-  if(input === "Sally"){
-    return "Hello, Sally!";
+  if (!input) {
+    return "Hello, World!"
   }
   else{
-    return "Hello, World!";
+    return "Hello, " + input + "!";
   }
 };
 
