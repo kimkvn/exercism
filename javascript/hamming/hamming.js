@@ -1,13 +1,10 @@
 var Hamming = function(){};
 
 Hamming.prototype.compute = function(first, second){
-
   var count = 0;
-
   if(first.length != second.length){
     throw Error("DNA strands must be of equal length.");
   }
-
   else if(first !== second){
     for(var i = 0; i < first.length; i++){
       if(first[i] !== second[i]){
@@ -16,11 +13,7 @@ Hamming.prototype.compute = function(first, second){
     }
     return count;
   }
-
-  else{
-    return 0;
-  }
-
+  return count;
 };
 
 module.exports = Hamming;
