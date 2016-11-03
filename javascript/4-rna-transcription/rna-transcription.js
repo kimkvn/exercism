@@ -1,18 +1,26 @@
 var DnaTranscriber = function(){};
 
 DnaTranscriber.prototype.toRna = function(dna){
-  if(dna === 'C'){
-    return 'G';
+
+  var rna = '';
+
+  for(var i = 0; i < dna.length; i++){
+    if(dna[i] === 'C'){
+      rna += 'G';
+    }
+    if(dna[i] === 'G'){
+      rna += 'C';
+    }
+    if(dna[i] === 'A'){
+      rna += 'U';
+    }
+    if(dna[i] === 'T'){
+      rna += 'A';
+    }
   }
-  if(dna === 'G'){
-    return 'C';
-  }
-  if(dna === 'A'){
-    return 'U';
-  }
-  if(dna === 'T'){
-    return 'A';
-  }
+
+  return rna;
+  
 };
 
 
