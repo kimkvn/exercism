@@ -9,6 +9,13 @@ Bob.prototype.hey = function(input) {
   if(input === input.toUpperCase()){
     return 'Whoa, chill out!';
   }
+  var last = input.length - 1;
+  if(input[last] === "?"){
+    return 'Sure.';
+  }
+  if(input[last] === "!"){
+    return 'Whatever.';
+  }
   return 'Whatever.'
 };
 
