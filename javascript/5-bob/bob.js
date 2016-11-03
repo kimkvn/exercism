@@ -6,6 +6,11 @@
 var Bob = function() {};
 
 Bob.prototype.hey = function(input) {
+
+  if(typeof input === "number"){
+    return 'Whatever.';
+  }
+
   if(input === input.toUpperCase()){
     return 'Whoa, chill out!';
   }
