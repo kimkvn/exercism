@@ -3,13 +3,7 @@
 // convenience to get you started writing code faster.
 //
 
-
-
-
-
 var Bob = function() {};
-
-
 
 Bob.prototype.hey = function(input) {
 
