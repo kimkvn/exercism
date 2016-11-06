@@ -26,6 +26,10 @@ Bob.prototype.hey = function(input) {
     break;
   }
 
+  if(letterCount === 0 && input[last] === "?"){
+    return 'Sure.';
+  }
+
   if(letterCount === 0 && input[last] !== "!"){
     return 'Whatever.';
   }
